@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html> 
+<body background="bg.jpg">
+<title>
+UAE
+</title>
+<head>
+<style>
+.wrapper {
+        text-align: center;
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	text-align: center;
+    background-color: #555656;
+	
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #979999
+;
+}
+
+</style>
+<div class="wrapper">
+<ul>
+
+	<li><a href="homepage.html">Home</a></li></center>
+	<li><a href="History and Facts.html">History and facts</a></li>
+	<li><a href="Atractions.html">Atractions</a></li>
+	<li><a href="transport.html">Transport</a></li>
+	<li><a href="useful tools.html">Useful tools</a></li>
+
+</ul>
+</div>
+</head>
+<body>
+
+<head><font size="7" color="white">
+<center>UAE</center>
+</head></font>
+
+<center>
+<img class="Slideshow" src="downtown.jpg" style="width:1500px;height:500px;">
+<img class="Slideshow" src="marina.jpg"style="width:1500px;height:500px;">
+<img class="Slideshow" src="abu.jpg"style="width:1500px;height:500px;">
+<img class="Slideshow" src="palm.jpg"style="width:1500px;height:500px;">
+<img class="Slideshow" src="creek harbour tower.jpg"style="width:1500px;height:500px;">
+<img class="Slideshow" src="creek harbour.jpg"style="width:1500px;height:500px;">
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("Slideshow");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 second
+}
+</script>
+	
+</center>
+<center><font size="6" color="white">About this website</font></center>
+<font size="5" color="white"><center>
+This website has been created specificly for all those people who want to move to the UAE or want to
+visit the country but dont know much about the country. This website has all the things that you will
+find useful when moving to or visiting the UAE. You can navigate this website by using the taskbar at the top.
+</font></center>
+</body>
+
+<body>
+<div id="slideout">
+   
+    <div id="slideout_inner">
+        <form>
+            <textarea></textarea>
+            <input type="submit" value="Post feedback"></input>
+        </form>
+    </div>
+</div>
+<style>
+#slideout {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 20px;
+    padding: 12px 0;
+    text-align: center;
+    background: #FF0000;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+}
+#slideout_inner {
+    position: fixed;
+    top: 70px;
+    right: -250px;
+    background: #FF0000;
+    width: 220px;
+    padding: 25px;
+    height: 130px;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    text-align: left;
+}
+#slideout_inner textarea {
+    width: 190px;
+    height: 100px;
+    margin-bottom: 6px;
+}
+#slideout:hover {
+    right: 250px;
+}
+#slideout:hover #slideout_inner {
+    right: 0;
+}
+</style>
+</body>
+</html>
